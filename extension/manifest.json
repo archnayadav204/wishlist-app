@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Wishlist Saver",
+  "version": "1.0",
+  "description": "Save Amazon products directly to your Wishlist Dashboard.",
+
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+
+  "host_permissions": [
+    "https://www.amazon.in/*",
+    "https://www.amazon.com/*",
+    "https://www.flipkart.com/*",
+    "http://localhost:8000/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.in/*/dp/*",
+        "https://www.amazon.in/dp/*",
+        "https://www.amazon.com/*/dp/*",
+        "https://www.amazon.com/dp/*",
+        "https://www.flipkart.com/*/p/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Wishlist Saver"
+  }
+}
