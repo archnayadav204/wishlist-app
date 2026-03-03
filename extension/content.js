@@ -1,6 +1,5 @@
 (function () {
-  // ← Update this to your deployed Render URL after deployment
-  const API_BASE = 'http://localhost:8000'
+  const API_BASE = 'https://wishlist-app-n5yh.onrender.com'
 
   const href = window.location.href
   const isAmazon   = href.includes('amazon.in') || href.includes('amazon.com')

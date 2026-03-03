@@ -1,5 +1,4 @@
-// ← Update this to your deployed Render URL after deployment
-const API_BASE = 'http://localhost:8000'
+const API_BASE = 'https://wishlist-app-n5yh.onrender.com'
 const API = `${API_BASE}/api`
 
 // ── DOM refs ──────────────────────────────────────────────────────────────────

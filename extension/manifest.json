@@ -13,7 +13,7 @@
     "https://www.amazon.in/*",
     "https://www.amazon.com/*",
     "https://www.flipkart.com/*",
-    "http://localhost:8000/*"
+    "https://wishlist-app-n5yh.onrender.com/*"
   ],
 
   "content_scripts": [
